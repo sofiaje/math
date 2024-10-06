@@ -78,7 +78,6 @@ const abortMission = () => {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  height: 100%;
   border-radius: 1rem;
 
   .close-btn {
@@ -109,7 +108,7 @@ const abortMission = () => {
     p {
       border-right: 2px solid var(--game-card-color);
     }
-    
+
     & >* {
       padding: 1rem;
       width: 100%;

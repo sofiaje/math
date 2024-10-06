@@ -4,7 +4,7 @@ import { useGameStore } from "./game"
 
 export const useTimerStore = defineStore('timerStore', () => {
 const gameStore = useGameStore()
-const timerCount = ref(59)
+const timerCount = ref(30)
 let timer = ref(null)
 
 const coutDownTimer = () => {
@@ -18,7 +18,7 @@ const coutDownTimer = () => {
 
 const resetTimer = () => {
   clearTimeout(timer)
-  timerCount.value = 59
+  timerCount.value = 30
 }
 
 const stopTimer = () => {

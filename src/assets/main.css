@@ -23,6 +23,11 @@ img {
 a:hover {
   background-color: var(--accent-color-hover);
 }
+button {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
 
 .btn {
   cursor: pointer;
