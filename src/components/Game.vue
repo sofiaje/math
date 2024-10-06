@@ -77,14 +77,16 @@ const abortMission = () => {
 .game-container {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 5rem;
   border-radius: 1rem;
+  height: 100%;
 
   .close-btn {
     align-self: flex-end;
     cursor: pointer;
     background-color: transparent;
     color: rgb(196, 196, 196);
+    color: var(--game-card-color);
     border: none;
     font-size: 1.1rem;
     font-weight: bold;
@@ -93,8 +95,6 @@ const abortMission = () => {
   .game-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
     gap: 2rem;
   }
 
@@ -104,6 +104,7 @@ const abortMission = () => {
     width: 100%;
     border-radius: 1rem;
     border: 2px solid var(--game-card-color);
+
     
     p {
       border-right: 2px solid var(--game-card-color);

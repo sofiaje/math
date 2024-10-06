@@ -24,7 +24,7 @@ const handleFormSubmit = (e) => {
 <template>
   <div class="start-screen">
     <img src="../assets/tiny-students.jpg" alt="">
-    <!-- <div v-if="!gameStore.userName">
+    <div v-if="!gameStore.userName">
       <form @submit="handleFormSubmit" class="form">
         <label for="name">Vad heter du?</label>
         <div class="flex">
@@ -32,14 +32,13 @@ const handleFormSubmit = (e) => {
           <button class="btn">Lägg till</button>
         </div>
       </form>
-    </div> -->
+    </div>
   
-    <div v-if="!gameStore.userName">
+    <div v-if="gameStore.userName">
       <!-- Senare: Knapp för att bestämma tid -->
-      <p>{{ gameStore.userName }}</p>
-    
-      <h2>Välkommen till Multiplikationstränaren!</h2>
-      <p>Träna gångertabeller på ett enkelt och roligt sätt. Följ dina framsteg och bli bättre varje dag.</p>
+      <!-- Senare: Kunna bestämma vilken tabell man vill träna på -->
+      <h2>Hej {{ gameStore.userName }}!</h2>
+      <p>Välkommen till Multiplikationstränaren, här kan du träna gångertabeller på ett enkelt och roligt sätt. Följ dina framsteg och bli bättre varje dag 💪</p>
       <button class="btn" @click="startGame">Start</button>
     </div>
 
@@ -63,7 +62,8 @@ img {
 input {
   padding: .5rem;
   border-radius: 1rem;
-  border: 1px solid green;
+  border: 1px solid black;
+  flex-grow: 1;
 }
 
 .form {
@@ -75,5 +75,6 @@ input {
 .flex {
   display: flex;
   gap: .5rem;
+  width: 100%;
 }
 </style>

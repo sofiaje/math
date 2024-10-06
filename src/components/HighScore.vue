@@ -13,12 +13,13 @@ const restartGame = () => {
 
 <template>
     <!-- <img src="../assets/win.jpg" alt=""> -->
-<h2>Tiden är ute!</h2>
-<p>Du fick {{ gameStore.correctAnswers }} poäng</p>
+    <h1>👏</h1>
+    <h2>Tiden är ute!</h2>
+    <p>Du fick {{ gameStore.correctAnswers }} poäng</p>
 
-<!-- <h3>Tidigare resultat:</h3> -->
-<!-- Visa tio bästa resultat -->
+    <!-- <h3>Tidigare resultat:</h3> -->
+    <!-- Visa tio bästa resultat -->
 
-<button class="btn" @click="restartGame">Försök igen</button>
+    <button class="btn" @click="restartGame">Försök igen</button>
 </template>
 
