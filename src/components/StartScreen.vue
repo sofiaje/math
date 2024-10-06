@@ -40,12 +40,16 @@ const handleFormSubmit = (e) => {
       <h2>Hej {{ gameStore.userName }}!</h2>
       <p>Välkommen till Multiplikationstränaren, här kan du träna gångertabeller på ett enkelt och roligt sätt. Följ dina framsteg och bli bättre varje dag 💪</p>
       <button class="btn" @click="startGame">Start</button>
+      <br><br>
     </div>
 
   </div>
 </template>
 
 <style scoped>
+p {
+  margin-bottom: 1rem;
+}
 .start-screen {
   display: flex;
   flex-direction: column;

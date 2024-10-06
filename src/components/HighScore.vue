@@ -23,3 +23,8 @@ const restartGame = () => {
     <button class="btn" @click="restartGame">Försök igen</button>
 </template>
 
+<style scoped>
+p {
+  margin-bottom: 1rem;
+}
+</style>
